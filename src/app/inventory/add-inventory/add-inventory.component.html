@@ -1,0 +1,44 @@
+<div>
+<p>add-inventory works!</p>
+<div id="form div">
+    <form>
+        <label for ="color">Color</label>
+        <input 
+                    type="text"
+                    class="form-control"
+                    name="color"
+                    required
+                    [(ngModel)]="inventory.color"/>
+                   
+                    <label for ="serialNumber">serial number</label>
+                    <input 
+                    type="text"
+                    class="form-control"
+                    name="serialNumber"
+                    required
+                    [(ngModel)]="inventory.serialNumber"/>
+                
+                    <label for ="numberOfWheels">numberOfWheels</label>
+                    <input 
+                    type="text"
+                    class="form-control"
+                    name="numberOfWheels"
+                    required
+                    [(ngModel)]="inventory.numberOfWheels"/>
+              
+                    <label for ="manufacturerId">manufacturerId</label>
+                    <input 
+                    type="text"
+                    class="form-control"
+                    name="manufacturerId"
+                    required
+                    [(ngModel)]="inventory.manufacturerId"/>
+                    
+
+    </form>
+    <div>
+        <button (click)="saveInventory()">save</button>
+    </div>
+</div>
+</div>
+

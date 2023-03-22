@@ -1,0 +1,9 @@
+<div>
+<p>manfacturer works!</p>
+<div *ngFor="let manfacturer of manufacturers | async">
+<ul>
+    {{manfacturer.companyName}}
+    {{manfacturer.manufacturerId}}
+</ul>
+</div>
+</div>

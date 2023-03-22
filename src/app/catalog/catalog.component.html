@@ -1,0 +1,11 @@
+<div>
+<p>catalog works!</p>
+<div>
+    <ol *ngFor="let catalog of catalogs | async">
+        <li> catalogid {{catalog.catalogId}}</li>
+        <li> Description {{catalog.description}}</li>
+        <li>InventoryId {{catalog.inventoryId}}</li>
+    </ol>
+</div>
+
+</div>

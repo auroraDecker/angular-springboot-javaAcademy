@@ -1,0 +1,10 @@
+<div>
+<p>inventory works!</p>
+<div>
+<ol *ngFor="let inventory of inventories | async">
+    <li>{{inventory.manufacturerId}}</li>
+    <li>{{inventory.color}}</li>
+</ol>
+</div>
+</div>
+

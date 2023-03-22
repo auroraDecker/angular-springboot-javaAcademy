@@ -1,0 +1,25 @@
+<div>
+<p>add-catalog works!</p>
+<div id="form-group">
+    <form>
+        <input 
+            type="text"
+            class="form-control"
+            name="inventoryId"
+            required
+            [(ngModel)]="catalog.inventoryId"/>
+            <label for="inventoryId ">inventoryId</label>
+
+            <input 
+            type="text"
+            class="form-control"
+            name="description"
+            required
+            [(ngModel)]="catalog.description"/>
+            <label for="description ">description</label>
+           
+</form>
+<button (click)="saveCatalog()">submit</button>
+
+</div>
+</div>

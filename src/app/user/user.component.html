@@ -1,0 +1,11 @@
+<div>
+<p>user works!</p>
+<ol >
+    <li *ngFor="let user of users | async">
+        {{user.id}}
+        {{user.username}}
+        {{user.role}}
+    </li>
+</ol>
+</div>
+

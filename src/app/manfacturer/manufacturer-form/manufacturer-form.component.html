@@ -1,0 +1,19 @@
+<div>
+    <div>
+<p>manufacturer-form works!</p>
+<form *ngIf="!submitted">
+                <input 
+                    type="text"
+                    class="form-control"
+                    id="companyName"
+                    required
+                    [(ngModel)]="manufacturer.companyName" [ngModelOptions]="{standalone: true}"/>
+                    <label for="companyName ">companyName</label>
+                   
+</form>
+</div>
+<div>
+<button (click)="saveManufacturer()">submit</button>
+
+
+</div>

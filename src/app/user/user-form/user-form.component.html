@@ -1,0 +1,38 @@
+<div>
+<div>
+    <div class = "submit form">
+        <div *ngIf="!submitted" >
+            <div class = "form-group">
+                <!--Label and button for Username, required meaning it has to be there for it to submitted
+                [ngModel] to tell it is binding to the model with []-->
+                <label for="username">Username</label>
+                <input 
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required
+                    [(ngModel)]="user.username"/>
+                    <label for="password">password</label>
+                <input 
+                    type="text"
+                    class="form-control"
+                    id="password"
+                    required
+                    [(ngModel)]="user.password"/>
+                    <label for="role">role</label>
+                <input 
+                    type="text"
+                    class="form-control"
+                    id="role"
+                    required
+                    [(ngModel)]="user.role"/>
+                   
+            </div>
+            <button (click)="saveUser()" class="btn btn-success">submit</button>
+        </div>
+        <div *ngIf="submitted">
+            <h4>User was successfully added!</h4>
+            <button class="btn btn-success" (click)="newUser()">Add</button>
+        </div>
+    </div>
+</div>
